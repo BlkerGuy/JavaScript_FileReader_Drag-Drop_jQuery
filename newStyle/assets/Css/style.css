@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.container {
+    display: flex;
+    margin: 100px 142px;
+    gap: 10px;
+}
+
+.container .drag-item {
+    height: 300px;
+    width: 300px;
+    border: 1px solid goldenrod;
+}
+
+.drag-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: grab;
+}
+
+.dragged-item {
+    opacity: 0.5;
+}
+
+
+/* } */
+
+
+  img:hover {
+    animation: scary 0.5s;
+    animation-iteration-count: infinite;
+}
+    @keyframes scary {
+        0% { transform: rotate(0deg); }
+        10% { transform: rotate(-1deg); }
+        30% { transform: rotate(0deg); }
+        50% { transform: rotate(-1deg); }
+        70% { transform: rotate(-1deg); }
+        90% { transform: rotate(0deg); }
+      }
